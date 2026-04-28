@@ -1,0 +1,7 @@
+interface:
+  display_name: "plain-speech"
+  short_description: "把文档改成直说，清掉先绕再回结论的语法"
+  default_prompt: "Use $plain-speech to reread the written document from disk and rewrite it into direct, natural Chinese."
+
+policy:
+  allow_implicit_invocation: true

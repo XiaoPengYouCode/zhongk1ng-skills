@@ -1,0 +1,7 @@
+interface:
+  display_name: "trip-planner"
+  short_description: "结合票价、耗时、请假成本与风险，给出最优私人行程方案"
+  default_prompt: "Use $trip-planner to compare 12306 and flight options on the web, price my leave in half-day units, and recommend the best itinerary."
+
+policy:
+  allow_implicit_invocation: true
