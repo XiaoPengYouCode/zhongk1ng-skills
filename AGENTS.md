@@ -1,10 +1,10 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to agents when working with this repository.
 
 ## Repository purpose
 
-Personal Claude Code skills repository. Skills extend Claude Code with specialized capabilities, domain knowledge, and tool integrations.
+Personal agent skills repository. Skills extend agents with specialized capabilities, domain knowledge, and tool integrations.
 
 ## Skill format
 
@@ -21,7 +21,7 @@ argument-hint: "[--flag]"  # optional
 ---
 # Skill title
 
-Markdown instructions that guide Claude Code when the skill is invoked.
+Markdown instructions that guide the agent when the skill is invoked.
 ```
 
 Optional skill subdirectories:
@@ -45,18 +45,20 @@ Optional skill subdirectories:
 
 ## Installation
 
-Skills are symlinked into `~/.claude/skills/`:
+Skills are integrated into agent systems via configuration or symlinks, e.g.:
 
 ```bash
-ln -s /path/to/zhongk1ing-skills/<skill-name> ~/.claude/skills/<skill-name>
+ln -s /path/to/zhongk1ng-skills/<skill-name> /agent/skills/<skill-name>
 ```
 
-Many skills in this repo are installed via `~/.agents/skills/` and symlinked from `~/.claude/skills/`. The `update-config` skill manages `~/.claude/settings.json` for hook and permission configuration.
+Many skills in this repo are installed via shared directories and symlinked. Agent-specific configuration files can manage hook and permission settings.
 
 ## Adding a new skill
 
 1. Create a directory with the skill name
 2. Add `SKILL.md` with required frontmatter (`name`, `description`, `when_to_use`)
 3. Add `scripts/`, `references/`, or `agents/` subdirectories as needed
-4. Symlink from `~/.claude/skills/<name>` to the skill directory
-5. If the skill needs tool permissions, configure them in `~/.claude/settings.json`
+4. Integrate the skill into your agent system (e.g., via symlink or config)
+5. If the skill needs tool permissions, configure them in the agent's settings
+
+```
