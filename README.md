@@ -1,6 +1,6 @@
 # zhongk1ng-skills
 
-Personal Claude Code skills repository.
+Personal agent skills repository.
 
 ## Skills
 
