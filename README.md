@@ -17,6 +17,6 @@ Each skill is a directory containing a `SKILL.md` with YAML frontmatter, plus op
 
 ## Installation
 
-```bash
-ln -s /path/to/zhongk1ng-skills/<skill-name> ~/.claude/skills/<skill-name>
+```sh
+npx skills add XiaoPengYouCode/zhongk1ng-skills
 ```
